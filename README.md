@@ -11,6 +11,6 @@
 <p> A website for online tutoring where students and teachers can register themselfs. For now, I started to develop the pages and their styles, 
 and the server. </p>
 
-<p> Stoody logo was created by me using <a href ="https://www.canva.com/"> Canva </a> </p>
+<p> Stoody logo was created by me using <a href ="https://www.canva.com/"> Canva. </a> </p>
 
 <p>This project is still ongoing, and this repository is in constant change! </p>
