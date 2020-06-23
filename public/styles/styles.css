@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+:root {
+    --primary-color: #ef7511;
+    --second-color: #0c3b2e
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffaf46;
+    background-image: url(http://pngimg.com/uploads/student/student_PNG171.png);
+    background-repeat: no-repeat;
+    background-position-y: 30vh;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 10%;
+    padding: 0;
+}
+
+header span {
+    margin-left: 35vw;
+}
+
+header a {
+    text-decoration: none;
+    color: #777777;
+    position: relative;
+}
+
+header a+a {
+    margin-left: 20px;
+}
+
+header a.active {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+header a:hover {
+    color: var(--second-color);
+}
+
+header a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+header a:hover::after {
+    transition: width 500ms ease-in-out 1ms;
+    width: 100%;
+}
