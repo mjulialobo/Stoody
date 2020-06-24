@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+{%block title%}
+  <title>Stoody</title>
+{%endblock title%}
+
+{%block links%}
+  <link rel="stylesheet" href="/styles/styles.css">
+{%endblock links%}
+
+{% block content %}
+  <div class="card">
+    <section class="avatar" style="background: url(https://source.unsplash.com/collection/8874679/500x500)no-repeat center center / cover"></section>
+    <section class="details">
+      <h3>Details</h3>
+      <div class="item">
+        <div>Teacher</div>
+        <div>Rita Rodrigues</div>
+      </div>
+
+      <div class="item">
+        <div> Age </div>
+        <div>30 years</div>
+      </div>
+
+      <div class="item">
+        <div>Educational level</div>
+        <div>Bachelor degree</div>
+      </div>
+
+       <div class="item">
+        <div>Type</div>
+        <div>Online and presential</div>
+      </div>
+
+      <div class="item">
+        <div>Subjects</div>
+        <div>
+          <span>Advanced Math</span>
+          <span>Physics</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div>Been with us since:</div>
+        <div>July,2017</div>
+      </div>
+
+    </section>
+  </div>
+{% endblock content %}
