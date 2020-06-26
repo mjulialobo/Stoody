@@ -1,0 +1,44 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "https://source.unsplash.com/collection/8874679/500x500",
+      "name": "Maria Julia Lobo",
+      "birth": 930096000000,
+      "degree": "bachelor",
+      "styles": "Presential and online",
+      "services": "History, Geography",
+      "created_at": 1593133137462,
+      "id": 1
+    },
+    {
+      "avatar_url": "https://source.unsplash.com/collection/8874679/500x500",
+      "name": "Leandro Caldas",
+      "birth": -160444800000,
+      "degree": "masters",
+      "styles": "Presential",
+      "services": "physics, advanced math, math",
+      "created_at": 1593133273992,
+      "id": 2
+    },
+    {
+      "avatar_url": "https://source.unsplash.com/collection/8874679/500x500",
+      "name": "Carlos Costa",
+      "birth": 486777600000,
+      "degree": "doctorate",
+      "styles": "Presential and online",
+      "services": "Art history, history",
+      "created_at": 1593133305033,
+      "id": 3
+    },
+    {
+      "avatar_url": "https://source.unsplash.com/collection/8874679/500x500",
+      "name": "Roberto Nigro",
+      "birth": 344908800000,
+      "degree": "masters",
+      "styles": "Presential and online",
+      "services": "history, math",
+      "created_at": 1593133734687,
+      "id": 4
+    }
+  ]
+}

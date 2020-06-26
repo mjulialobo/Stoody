@@ -127,6 +127,7 @@ header a:hover::after {
 .details .item div:nth-child(2) {
     font-weight: 700;
     display: flex;
+    font-size: 18px;
 }
 
 .details h3 {
@@ -147,4 +148,52 @@ header a:hover::after {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
+}
+
+
+/*FORM*/
+
+input {
+    width: 100%;
+    outline: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    width: initial;
+    margin-right: 4px;
+    align-items: center;
+}
+
+select {
+    width: initial;
+    margin-right: 4px;
+    align-items: center;
+    outline: none;
+    font-size: 16px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+a.button,
+button[type="submit"] {
+    padding: 8px 32px;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 8px;
+    margin-top: 32px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
 }

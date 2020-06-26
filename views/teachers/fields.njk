@@ -1,0 +1,46 @@
+            <div class="item">
+                <div>Avatar URL</div>
+                <div><input type="url" name="avatar_url" placeholder="https://" value="{{teacher.avatar_url}}"></div>
+            </div>
+
+            <div class="item">
+                <div>Teacher</div>
+                <div><input type="text" name="name" placeholder="Type your name" value="{{teacher.name}}"></div>
+            </div>
+
+            <div class="item">
+                <div>
+                    Birth date
+                </div>
+                <div><input type="date" name="birth" value="{{teacher.birth}}"></div>
+            </div>
+
+            <div class="item">
+                <div>Educational level (select one)</div>
+                <div>
+                    <select name="degree" value="{{teacher.degree}}">
+                        <option value="bachelor">Bachelor degree</option>
+                        <option value="masters">Masters degree</option>
+                        <option value="doctorate">Doctorate degree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Class Style</div>
+                <div>
+                      <select name="styles" value="{{teacher.style}}">
+                        <option value="Presential">Presential</option>
+                        <option value="Online">Online</option>
+                        <option value="Presential and online">Presential and Online</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Subjects you teach (separate with a comma)</div>
+                <div>
+                    <input type="text" name="services" placeholder="subject, subject"value="{{teacher.services}}"">
+                </div>
+            </div>
+            <button type="submit">Save</button>
