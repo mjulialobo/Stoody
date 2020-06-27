@@ -9,7 +9,7 @@
 
 {% block content %}
     <div class="card">
-    <section class="avatar"style="background: url({{teacher.avatar_url}})no-repeat center center / cover"></section>
+        <section class="avatar" style="background: url({{teacher.avatar_url}})no-repeat center center / cover"></section>
 
         <section class="details">
 
@@ -20,8 +20,8 @@
 
                 <input type="hidden" name="id" value="{{teacher.id}}">
             </form>
-            
-            <form id= "form-delete" method="POST" action="/teachers?_method=DELETE">
+
+            <form id="form-delete" method="POST" action="/teachers?_method=DELETE">
                 <input type="hidden" name="id" value="{{teacher.id}}">
                 <button type="submit">Delete</button>
             </form>

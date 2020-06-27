@@ -1,15 +1,15 @@
 <div class="item">
     <div>Avatar URL</div>
-    <div><input type="url" name="avatar_url" placeholder="https://" value={{student.avatar_url}}></div>
+    <div><input type="url" name="avatar_url" placeholder="https://" value="{{student.avatar_url}}"></div>
 </div>
 
 <div class="item">
     <div>Student</div>
-    <div><input type="text" name="name"  value="{{student.name}}"></div>
+    <div><input type="text" name="name" value="{{student.name}}"></div>
 </div>
 <div class="item">
     <div>Email</div>
-    <div><input type="email" name="email"  value="{{student.email}}"></div>
+    <div><input type="email" name="email" value="{{student.email}}"></div>
 </div>
 
 <div class="item">
@@ -22,22 +22,22 @@
 <div class="item">
     <div>Educational level (select one)</div>
     <div>
-        <select name="level" value={{student.level}}>
-            <option value="5" {%if student.level == "5"%} selected{%endif%}>5th grade</option>
-            <option value="6" {%if student.level == "6"%} selected {%endif%}>6th grade</option>
-            <option value="7" {%if student.level == "7"%} selected {%endif%}>7th grade</option>
-            <option value="8" {%if student.level == "8"%} selected {%endif%}>8th grade</option>
-            <option value="9" {%if student.level == "9"%} selected {%endif%}>9th grade</option>
-            <option value="10" {%if student.level == "10"%} selected {%endif%}>10th grade</option>
-             <option value="11" {%if student.level == "11"%} selected {%endif%}>11th grade</option>
-              <option value="12" {%if student.level == "12"%} selected {%endif%}>12th grade</option>
+        <select name="level" value="{{student.level}}">
+            <option value="5" {%if student.level == "5"%} selected="selected" {%endif%}>5th grade</option>
+            <option value="6" {%if student.level == "6"%} selected="selected" {%endif%}>6th grade</option>
+            <option value="7" {%if student.level == "7"%} selected="selected" {%endif%}>7th grade</option>
+            <option value="8" {%if student.level == "8"%} selected="selected" {%endif%}>8th grade</option>
+            <option value="9" {%if student.level == "9"%} selected="selected" {%endif%}>9th grade</option>
+            <option value="10" {%if student.level == "10"%} selected="selected" {%endif%}>10th grade</option>
+            <option value="11" {%if student.level == "11"%} selected="selected" {%endif%}>11th grade</option>
+            <option value="12" {%if student.level == "12"%} selected="selected" {%endif%}>12th grade</option>
         </select>
     </div>
 </div>
 
 <div class="item">
     <div>Class load (weekly)</div>
-    <div><input type="number" name="classload"  value="{{student.classload}}"></div>
+    <div><input type="number" name="classload" value="{{student.classload}}"></div>
 </div>
 
 <button type="submit">Save</button>

@@ -21,11 +21,12 @@
         <tbody>
           {%for student in students%}
             <tr>
-              <td><span style="background-image : url({{student.avatar_url}})"></span>{{student.name}}</td>
+              <td>
+                <span style="background-image : url({{student.avatar_url}})"></span>{{student.name}}</td>
               <td>{{student.email}}</td>
-             <td>
-               {{student.level}}th grade
-             </td>
+              <td>
+                {{student.level}}th grade
+              </td>
               <td>
                 <a href="/students/{{student.id}}">Enter</a>
               </td>

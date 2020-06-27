@@ -1,6 +1,6 @@
 <div class="item">
     <div>Avatar URL</div>
-    <div><input type="url" name="avatar_url" placeholder="https://" value={{teacher.avatar_url}}></div>
+    <div><input type="url" name="avatar_url" placeholder="https://" value="{{teacher.avatar_url}}"></div>
 </div>
 
 <div class="item">
@@ -18,12 +18,12 @@
 <div class="item">
     <div>Educational level (select one)</div>
     <div>
-        <select name="degree" value={{teacher.degree}}>
-            <option value="bachelor" {%if teacher.degree == "bachelor"%} selected{%endif%}>
+        <select name="degree" value="{{teacher.degree}}">
+            <option value="bachelor" {%if teacher.degree == "bachelor"%} selected="selected" {%endif%}>
                 Bachelor degree</option>
-            <option value="masters" {%if teacher.degree == "masters"%} selected {%endif%}>
+            <option value="masters" {%if teacher.degree == "masters"%} selected="selected" {%endif%}>
                 Masters degree</option>
-            <option value="doctorate" {%if teacher.degree == "doctorate"%} selected {%endif%}>Doctorate degree</option>
+            <option value="doctorate" {%if teacher.degree == "doctorate"%} selected="selected" {%endif%}>Doctorate degree</option>
         </select>
     </div>
 </div>
@@ -31,10 +31,10 @@
 <div class="item">
     <div>Class Style</div>
     <div>
-        <select name="styles" value={{teacher.styles}}>
-            <option value="Presential" {%if teacher.styles == "Presential"%} selected {%endif%}>Presential</option>
-            <option value="Online" {%if teacher.styles == "Online"%} selected {%endif%}>Online</option>
-            <option value="Presential and online" {%if teacher.styles == "Presential and online"%} selected {%endif%}>Presential and Online</option>
+        <select name="styles" value="{{teacher.styles}}">
+            <option value="Presential" {%if teacher.styles == "Presential"%} selected="selected" {%endif%}>Presential</option>
+            <option value="Online" {%if teacher.styles == "Online"%} selected="selected" {%endif%}>Online</option>
+            <option value="Presential and online" {%if teacher.styles == "Presential and online"%} selected="selected" {%endif%}>Presential and Online</option>
         </select>
     </div>
 </div>
@@ -42,7 +42,7 @@
 <div class="item">
     <div>Subjects (separate with a comma)</div>
     <div>
-        <input type="text" name="services" placeholder="subject, subject" value="{{teacher.services}}" ">
+        <input type="text" name="services" placeholder="subject, subject" value="{{teacher.services}}">
     </div>
 </div>
 <button type="submit">Save</button>

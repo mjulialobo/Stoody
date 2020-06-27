@@ -18,7 +18,9 @@
       </div>
 
       <div class="item">
-        <div> Age </div>
+        <div>
+          Age
+        </div>
         <div>{{teacher.age}}</div>
       </div>
 
@@ -27,29 +29,30 @@
         <div>{{teacher.degree}}</div>
       </div>
 
-       <div class="item">
-        <div>Type</div>  
-         <div>{{teacher.styles}}</div>
+      <div class="item">
+        <div>Type</div>
+        <div>{{teacher.styles}}</div>
       </div>
 
       <div class="item">
         <div>Subjects</div>
         <div>
           {% for service in teacher.services %}
-         <span>{{service}}</span>
-         {%endfor%}
+            <span>{{service}}</span>
+            {%endfor%}
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <div>Been with us since:</div>
-        <div>
-        {{teacher.created_at}}
+        <div class="item">
+          <div>Been with us since:</div>
+          <div>
+            {{teacher.created_at}}
+          </div>
         </div>
-      </div>
 
-      <a href="/teachers/{{teacher.id}}/edit" class="button"> Editar</a>
+        <a href="/teachers/{{teacher.id}}/edit" class="button">
+          Editar</a>
 
-    </section>
-  </div>
-{% endblock content %}
+      </section>
+    </div>
+  {% endblock content %}

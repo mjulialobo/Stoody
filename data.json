@@ -5,7 +5,7 @@
       "name": "Peter John",
       "email": "peterj@hotmail.com",
       "birth": 1312588800000,
-      "level": "5",
+      "level": "6",
       "classload": "3",
       "id": 1
     },
@@ -33,7 +33,7 @@
       "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
       "name": "Maria Carla Nigro",
       "birth": 646358400000,
-      "degree": "bachelor",
+      "degree": "masters",
       "styles": "Presential and online",
       "services": "History, Geography",
       "created_at": 1593209841679,
@@ -42,7 +42,7 @@
     {
       "avatar_url": "https://images.unsplash.com/photo-1523278669709-c05da80b6a65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
       "name": "Leandro da Silva Costa",
-      "birth": -294192000000,
+      "birth": 305337600000,
       "degree": "doctorate",
       "styles": "Presential and online",
       "services": "physics, advanced math, math",

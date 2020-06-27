@@ -16,15 +16,17 @@
           <th>Teacher</th>
           <th>Class format</th>
           <th>Subject</th>
-          
           <th>Action</th>
         </tr>
         <tbody>
           {%for teacher in teachers%}
             <tr>
-              <td><span style="background-image : url({{teacher.avatar_url}})"></span>{{teacher.name}}</td>
-              <td><span>{{teacher.styles}}</span></td>
-              <td><span>{{teacher.services}}</span></td>
+              <td>
+                <span style="background-image : url({{teacher.avatar_url}})"></span>{{teacher.name}}</td>
+              <td>
+                <span>{{teacher.styles}}</span></td>
+              <td>
+                <span>{{teacher.services}}</span></td>
               <td>
                 <a href="/teachers/{{teacher.id}}">Enter</a>
               </td>

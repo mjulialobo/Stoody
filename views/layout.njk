@@ -3,30 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+
         {%block title%}
-        <title>Stoody</title>
-       {%endblock title%}
+            <title>Stoody</title>
+        {%endblock title%}
 
-
-       {%block links%}
-       {%endblock links%}
+        {%block links%}{%endblock links%}
     </head>
 
     <body>
         <header>
-             <img src="/assets/logo.png" alt="logomarca">
+            <img src="/assets/logo.png" alt="logomarca">
             <div class="links">
-                 <a href="/teachers">
+                <a href="/teachers">
                     Teachers</a>
                 <a href="/students">Students</a>
             </div>
         </header>
-       
 
         <div id="{{pageId}}">
             {% block content %}{% endblock content %}
         </div>
-   <script src="/scripts.js"></script>
+        <script src="/scripts.js"></script>
     </body>
 </html>
