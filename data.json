@@ -1,21 +1,63 @@
 {
-    "students": [{
-        "avatar_url": "https://images.unsplash.com/photo-1590812787329-72cc6238be99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-        "name": "Peter John",
-        "email": "peterj@hotmail.com",
-        "birth": 1312588800000,
-        "level": "6",
-        "classload": "2",
-        "id": 1
-    }],
-    "teachers": [{
-        "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-        "name": "Maria Carla Silva",
-        "birth": 646358400000,
-        "degree": "masters",
-        "styles": "Online",
-        "services": "History, Geography",
-        "created_at": 1593209841679,
-        "id": 2
-    }]
+  "students": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1590812787329-72cc6238be99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Peter John",
+      "email": "peterj@hotmail.com",
+      "birth": 1312588800000,
+      "level": "5",
+      "classload": "3",
+      "id": 1
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1567091129357-62641d326aea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=630&q=80",
+      "name": "Maria Julia Lobo",
+      "email": "mjulialobo23@gmail.com",
+      "birth": 930096000000,
+      "level": "12",
+      "classload": "2",
+      "id": 2
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1499540785729-ac6adfa4efbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "name": "Israel Kaveski",
+      "email": "israelk@gmail.com",
+      "birth": 1107216000000,
+      "level": "11",
+      "classload": "4",
+      "id": 3
+    }
+  ],
+  "teachers": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Maria Carla Nigro",
+      "birth": 646358400000,
+      "degree": "bachelor",
+      "styles": "Presential and online",
+      "services": "History, Geography",
+      "created_at": 1593209841679,
+      "id": 2
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1523278669709-c05da80b6a65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+      "name": "Leandro da Silva Costa",
+      "birth": -294192000000,
+      "degree": "doctorate",
+      "styles": "Presential and online",
+      "services": "physics, advanced math, math",
+      "created_at": 1593227634296,
+      "id": 3
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1533489841871-a4e0f032e2d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80",
+      "name": "Carlos Oliveira Melo",
+      "birth": 483753600000,
+      "degree": "masters",
+      "styles": "Online",
+      "services": "Chemistry",
+      "created_at": 1593227840177,
+      "id": 4
+    }
+  ]
 }

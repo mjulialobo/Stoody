@@ -53,6 +53,7 @@ exports.show = function(req, res) {
 
     const student = {
         ...foundStudent,
+        birth: date(foundStudent.birth).birthDay,
         age: age(foundStudent.birth),
         level: level(foundStudent.level),
     }
@@ -71,7 +72,7 @@ exports.edit = function(req, res) {
 
     const student = {
         ...foundStudent,
-        birth: date(foundStudent.birth).iso
+        birth: date(foundStudent.birth).iso,
     }
 
     return res.render('students/edit', { student })
@@ -93,7 +94,7 @@ exports.put = function(req, res) {
         ...foundStudent,
         ...req.body,
         birth: Date.parse(req.body.birth),
-        id: Number(data.students.id)
+        id: Number(req.body.id)
 
     }
 

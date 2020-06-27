@@ -110,7 +110,7 @@ exports.put = function(req, res) {
         ...foundTeacher,
         ...req.body,
         birth: Date.parse(req.body.birth),
-        id: Number(data.teachers.id)
+        id: Number(req.body.id)
 
     }
 
