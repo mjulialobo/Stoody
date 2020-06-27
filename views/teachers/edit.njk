@@ -1,4 +1,4 @@
-{% extends "layout.njk" %}
+{% extends "../layout.njk" %}
 {%block title%}
     <title>Stoody</title>
 {%endblock title%}
@@ -8,15 +8,27 @@
 {%endblock links%}
 
 {% block content %}
-    <form class="card" method="POST" action="/teachers">
-        <section class="avatar" style="background: url(https://source.unsplash.com/collection/8874679/500x500)no-repeat center center / cover"></section>
+    <div class="card">
+    <section class="avatar"style="background: url({{teacher.avatar_url}})no-repeat center center / cover"></section>
 
         <section class="details">
-            <h3>Edit information</h3>
-            
-            {%include 'teachers/fields.njk'%}
 
+            <form method="POST" action="/teachers?_method=PUT">
+                <h3>Edit information</h3>
+
+                {%include 'teachers/fields.njk'%}
+
+                <input type="hidden" name="id" value="{{teacher.id}}">
+            </form>
+            
+            <form id= "form-delete" method="POST" action="/teachers?_method=DELETE">
+                <input type="hidden" name="id" value="{{teacher.id}}">
+                <button type="submit">Delete</button>
+            </form>
+
+            {%include '../confirm.njk'%}
 
         </section>
-    </form>
+
+    </div>
 {% endblock content %}

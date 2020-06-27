@@ -20,6 +20,26 @@ module.exports = {
         }
     },
 
+    level: function(level) {
+        if (level == "5") {
+            return "5th - Elementary School";
+        } else if (level == "6") {
+            return "6th - Elementary School";
+        } else if (level == "7") {
+            return "7th - Junior Highschool";
+        } else if (level == "8") {
+            return "8th - Junior Highschool";
+        } else if (level == "9") {
+            return "9th - Junior Highschool";
+        } else if (level == "10") {
+            return "10th - Senior Highschool";
+        } else if (level == "11") {
+            return "11th - Senior Highschool";
+        } else if (level == "12") {
+            return "12th - Senior Highschool";
+        }
+    },
+
     date: function date(timestamp) {
         const date = new Date(timestamp)
 
@@ -27,8 +47,13 @@ module.exports = {
         const month = `0${date.getUTCMonth() + 1}`.slice(-2)
         const day = `0${date.getUTCDate()}`.slice(-2)
 
-        return (`${ year }-${ month }-${ day }`)
+        return {
+            day,
+            month,
+            year,
+            iso: `${ year }-${ month }-${ day }`,
+            birthDay: `${day}/${month}/`
 
+        }
     }
-
 }

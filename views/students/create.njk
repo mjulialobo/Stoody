@@ -8,12 +8,12 @@
 {%endblock links%}
 
 {% block content %}
-    <form class="card" method="POST" action="/teachers">
-        <section class="avatar" style="background: url(https://source.unsplash.com/collection/8874679/500x500)no-repeat center center / cover"></section>
+    <form class="card" method="POST" action="/students">
+        <section class="avatar" style="background: url({{student.avatar_url}})no-repeat center center / cover"></section>
 
         <section class="details">
-            <h3>New teacher</h3>
-            {%include 'teachers/fields.njk'%}
+            <h3>New student</h3>
+            {%include 'students/fields.njk'%}
 
         </section>
     </form>

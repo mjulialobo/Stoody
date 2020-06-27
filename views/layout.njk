@@ -16,18 +16,17 @@
     <body>
         <header>
              <img src="/assets/logo.png" alt="logomarca">
-            <span>
-                 <a href="/teachers"class="active">
+            <div class="links">
+                 <a href="/teachers">
                     Teachers</a>
-                <a href="/">Students</a>
-              
-            </span>
+                <a href="/students">Students</a>
+            </div>
         </header>
        
 
         <div id="{{pageId}}">
             {% block content %}{% endblock content %}
         </div>
-   {% block scripts %}{% endblock scripts %}
+   <script src="/scripts.js"></script>
     </body>
 </html>

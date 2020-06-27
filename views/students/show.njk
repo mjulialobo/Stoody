@@ -1,0 +1,46 @@
+{% extends "../layout.njk" %}
+{%block title%}
+  <title>Stoody</title>
+{%endblock title%}
+
+{%block links%}
+  <link rel="stylesheet" href="/styles/styles.css">
+{%endblock links%}
+
+{% block content %}
+  <div class="card">
+    <section class="avatar" style="background: url({{student.avatar_url}})no-repeat center center / cover"></section>
+    <section class="details">
+      
+      <h3>Details</h3>
+
+      <div class="item">
+        <div>Student</div>
+        <div>{{student.name}}</div>
+      </div>
+      
+      <div class="item">
+        <div>Email</div>  
+         <div>{{student.email}}</div>
+      </div>
+
+      <div class="item">
+        <div> Age </div>
+        <div>{{student.age}}</div>
+      </div>
+
+      <div class="item">
+        <div>Educational level</div>
+        <div>{{student.level}}</div>
+      </div>
+
+       <div class="item">
+        <div>class load (weekly)</div>  
+         <div>{{student.classload}}</div>
+      </div>
+
+      <a href="/students/{{student.id}}/edit" class="button"> Editar</a>
+
+    </section>
+  </div>
+{% endblock content %}

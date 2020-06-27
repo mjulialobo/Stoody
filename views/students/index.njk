@@ -9,21 +9,25 @@
 
 {% block content %}
   <div class="card table-container">
-    <a href="/teachers/create">Add new</a>
+    <a href="/students/create">Add new</a>
     <table width="100%">
       <thead>
         <tr>
-          <th>Teacher</th>
-          <th>Subject</th>
+          <th>Student</th>
+          <th>Email</th>
+          <th>Level</th>
           <th>Action</th>
         </tr>
         <tbody>
-          {%for teacher in teachers%}
+          {%for student in students%}
             <tr>
-              <td><span style="background-image : url({{teacher.avatar_url}})"></span>{{teacher.name}}</td>
-              <td><span>{{teacher.services}}<span></td>
+              <td><span style="background-image : url({{student.avatar_url}})"></span>{{student.name}}</td>
+              <td>{{student.email}}</td>
+             <td>
+               {{student.level}}th grade
+             </td>
               <td>
-                <a href="/teachers/{{teacher.id}}">Enter profile</a>
+                <a href="/students/{{student.id}}">Enter profile</a>
               </td>
             </tr>
             {%endfor%}
