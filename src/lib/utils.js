@@ -1,5 +1,5 @@
 module.exports = {
-    age: function age(timestamp) {
+    age(timestamp) {
         const today = new Date()
         const birthDate = new Date(timestamp)
         let age = today.getFullYear() - birthDate.getFullYear()
@@ -9,7 +9,7 @@ module.exports = {
         }
         return age
     },
-    graduation: function(degree) {
+    graduation(degree) {
         if (degree == "bachelor") {
             return "Bachelor degree";
         } else if (degree == "masters") {
@@ -19,8 +19,7 @@ module.exports = {
 
         }
     },
-
-    level: function(level) {
+    level(level) {
         if (level == "5") {
             return "5th - Elementary School";
         } else if (level == "6") {
@@ -39,8 +38,7 @@ module.exports = {
             return "12th - Senior Highschool";
         }
     },
-
-    date: function date(timestamp) {
+    date(timestamp) {
         const date = new Date(timestamp)
 
         const year = date.getUTCFullYear()
@@ -52,7 +50,8 @@ module.exports = {
             month,
             year,
             iso: `${ year }-${ month }-${ day }`,
-            birthDay: `${month}/${day}`
+            birthDay: `${month}/${day}`,
+            format: `${ day }/${ month }/${ year }`
 
         }
     }
