@@ -34,6 +34,18 @@
         </select>
     </div>
 </div>
+<div class="item">
+    <div>Responsible teacher</div>
+    <div>
+        <select name="teacher">
+           {%for teacher in teacherOptions%}
+                <option value="{{teacher.id}}" {%if student.teacher_id == teacher.id %} selected="selected" {%endif%}>
+                    {{teacher.name}}
+                </option>
+            {%endfor%}
+        </select>
+    </div>
+</div>
 
 <div class="item">
     <div>Class load (weekly)</div>

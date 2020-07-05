@@ -4,7 +4,7 @@
 {%endblock title%}
 
 {%block links%}
-  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/forms.css">
 {%endblock links%}
 
 {% block content %}
@@ -40,6 +40,11 @@
       <div class="item">
         <div>Educational level</div>
         <div>{{student.level}}</div>
+      </div>
+
+       <div class="item">
+        <div>Responsible teacher</div>
+        <div>{{student.teacher_name}}</div>
       </div>
 
       <div class="item">

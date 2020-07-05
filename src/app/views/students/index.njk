@@ -4,40 +4,51 @@
 {%endblock title%}
 
 {%block links%}
-  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/index.css">
 {%endblock links%}
 
 {% block content %}
   <div class="card table-container">
-    <a href="/students/create">Add new</a>
+    <div class="header">
+    <a href="/students/create" class="button">Add new</a>
+    <form action="/students" method="GET">
+      <input type="text" name="filter" placeholder="Filter by name or email" value="{{filter}}">
+      <button type="submit"></button>
+    </form>
+    </div>
     <table width="100%">
       <thead>
         <tr>
           <th>Student</th>
           <th>Email</th>
           <th>Level</th>
+          <th>Class load</th>
           <th>Action</th>
         </tr>
-        <tbody>
-          {%for student in students%}
-            <tr>
-              <td>
-                <span style="background-image : url({{student.avatar_url}})"></span>{{student.name}}</td>
-              <td>{{student.email}}</td>
-              <td>
-                {{student.level}}th grade
-              </td>
-              <td>
-                <a href="/students/{{student.id}}">Enter</a>
-              </td>
-            </tr>
-            {%endfor%}
-          </tbody>
-        </thead>
-
+      </thead>
+      <tbody>
+        {%for student in students%}
+          <tr>
+            <td>
+              <span style="background-image : url({{student.avatar_url}})"></span>{{student.name}}</td>
+            <td>{{student.email}}</td>
+            <td>
+              {{student.level}}th grade
+            </td>
+            <td>
+              {{student.classload}} hours
+            </td>
+            <td>
+              <a href="/students/{{student.id}}">Enter</a>
+            </td>
+          </tr>
+          {%endfor%}
+        </tbody>
       </table>
-    </div>
+      <div class="pagination" 
+        data-page="{{pagination.page}}"
+        data-total="{{pagination.total}}"
+        data-filter="{{filter}}">
+      </div>
 
-  </section>
-</div>
-{% endblock content %}
+</div>{% endblock content %}

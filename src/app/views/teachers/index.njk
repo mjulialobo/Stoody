@@ -4,40 +4,60 @@
 {%endblock title%}
 
 {%block links%}
-  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/index.css">
 {%endblock links%}
 
 {% block content %}
   <div class="card table-container">
-    <a href="/teachers/create">Add new</a>
+    <div class="header">
+      <a href="/teachers/create" class="button">Add new</a>
+      <form action="/teachers" method="GET">
+        <input type="text" name="filter" placeholder="Filter by name or subject" value="{{filter}}">
+        <button type="submit"></button>
+      </form>
+    </div>
     <table width="100%">
       <thead>
         <tr>
           <th>Teacher</th>
           <th>Class format</th>
           <th>Subject</th>
+          <th>Students</th>
           <th>Action</th>
         </tr>
-        <tbody>
-          {%for teacher in teachers%}
-            <tr>
-              <td>
-                <span style="background-image : url({{teacher.avatar_url}})"></span>{{teacher.name}}</td>
-              <td>
-                <span>{{teacher.styles}}</span></td>
-              <td>
-                <span>{{teacher.services}}</span></td>
-              <td>
-                <a href="/teachers/{{teacher.id}}">Enter</a>
-              </td>
-            </tr>
-            {%endfor%}
-          </tbody>
-        </thead>
+      </thead>
+      <tbody>
+        {%for teacher in teachers%}
+          <tr>
+            <td>
+              <span style="background-image : url({{teacher.avatar_url}})"></span>{{teacher.name}}
+            </td>
 
+            <td>
+              <span>{{teacher.styles}}</span>
+            </td>
+
+            <td>
+              <span>{{teacher.services}}</span>
+            </td>
+
+            <td>
+              {{teacher.total_students}}
+            </td>
+
+            <td>
+              <a href="/teachers/{{teacher.id}}">Enter</a>
+            </td>
+          </tr>
+          {%endfor%}
+        </tbody>
       </table>
-    </div>
 
-  </section>
-</div>
-{% endblock content %}
+      <div class="pagination" 
+        data-page="{{pagination.page}}"
+        data-total="{{pagination.total}}"
+        data-filter="{{filter}}">
+      </div>
+
+    </div>
+  {% endblock content %}
