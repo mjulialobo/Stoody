@@ -37,9 +37,11 @@ $ npm start
 ```
 
  <h2><img src="https://static.thenounproject.com/png/25759-200.png"width="50px" height="50px" align="center"/> Results</h2>
- 
- <h3> Teachers list</h3>
-<img src ="https://user-images.githubusercontent.com/65983895/85913947-9a3e0f00-b80f-11ea-8eb8-2bed994c37d1.PNG"/>
 
 <p> Note: gif distorts images and colors </p>
-<img src ="https://user-images.githubusercontent.com/65983895/85913943-93af9780-b80f-11ea-83df-4fd5e9857c18.gif"/>
+ <h3> Stoody</h3>
+<img src ="https://user-images.githubusercontent.com/65983895/86527483-744ee500-be75-11ea-82d7-02c0fa9eaef4.gif"/>
+
+ <h3> Adding new teachers and students </h3>
+<img src ="https://user-images.githubusercontent.com/65983895/86527484-7749d580-be75-11ea-89d2-4764950454dc.PNG"/>
+<img src ="https://user-images.githubusercontent.com/65983895/86527485-77e26c00-be75-11ea-9366-7db0c19868d6.PNG"/>
