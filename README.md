@@ -43,5 +43,6 @@ $ npm start
 <img src ="https://user-images.githubusercontent.com/65983895/86527483-744ee500-be75-11ea-82d7-02c0fa9eaef4.gif"/>
 
  <h3> Adding new teachers and students </h3>
-<img src ="https://user-images.githubusercontent.com/65983895/86527484-7749d580-be75-11ea-89d2-4764950454dc.PNG"/>
 <img src ="https://user-images.githubusercontent.com/65983895/86527485-77e26c00-be75-11ea-9366-7db0c19868d6.PNG"/>
+<img src ="https://user-images.githubusercontent.com/65983895/86527484-7749d580-be75-11ea-89d2-4764950454dc.PNG"/>
+
