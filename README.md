@@ -20,7 +20,7 @@
 <h4> 1. Clone this repository <h4>
 
 ```
- $ git clone https://github.com/mjulialobo/Launchbase-Desafio03
+ $ git clone https://github.com/mjulialobo/Stoody
 ```
 
 <h4> 2. Running the application on your terminal <h4>
