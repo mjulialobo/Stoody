@@ -3,7 +3,7 @@
   <img alt= "Stoody" src= "https://github.com/mjulialobo/Stoody/blob/master/public/assets/logo.PNG" width="200px"/>
 </h3>
  <p align="center"> applications developed during Rocketseat's Launchbase bootcamp </P>  
-<h2> <img src= "https://img.icons8.com/plasticine/2x/rocket.png" width="50px" height="50px" align="center"/> What are we creating? </h2>
+<h2> <img src= "https://img.icons8.com/plasticine/2x/rocket.png" width="50px" height="50px" align="center"/> What was created? </h2>
 
 <p> Stoody is a manager for private classes. With Stoody, it is possible to create teachers and students profile, edit and/or delete them. It was created using HTML, CSS, JavaScript, Node.js and PostgreSQL. </p>
 
