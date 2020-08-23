@@ -1,6 +1,3 @@
-<h1 align="center">
-    <img alt="Launchbase" src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png" width="200px" />
-</h1>
 
 <h3 align="center">
   <img alt= "Stoody" src= "https://github.com/mjulialobo/Stoody/blob/master/public/assets/logo.PNG" width="200px"/>
